@@ -1,4 +1,4 @@
-package com.github.l1an.yuvarielevel.manager
+package com.github.l1an.yuvarielevel.module.manager
 
 import org.serverct.parrot.parrotx.mechanism.Reloadable
 import taboolib.module.configuration.Config

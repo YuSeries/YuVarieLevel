@@ -1,4 +1,4 @@
-package com.github.l1an.yuvarielevel.compat.papi.impl
+package com.github.l1an.yuvarielevel.module.compat.papi.impl
 
 import com.github.l1an.yuvarielevel.api.event.PlaceholderHookEvent
 import org.serverct.parrot.parrotx.module.level.LevelManager.getLevel

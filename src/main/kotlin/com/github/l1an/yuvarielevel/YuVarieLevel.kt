@@ -1,6 +1,6 @@
 package com.github.l1an.yuvarielevel
 
-import com.github.l1an.yuvarielevel.manager.ConfigManager.config
+import com.github.l1an.yuvarielevel.module.manager.ConfigManager.config
 import org.serverct.parrot.parrotx.function.sendInfo
 import org.serverct.parrot.parrotx.function.setInfoPrefix
 import org.serverct.parrot.parrotx.update.GithubUpdateChecker

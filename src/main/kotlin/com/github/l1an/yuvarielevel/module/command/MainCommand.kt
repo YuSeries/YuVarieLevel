@@ -1,8 +1,8 @@
-package com.github.l1an.yuvarielevel.command
+package com.github.l1an.yuvarielevel.module.command
 
-import com.github.l1an.yuvarielevel.command.subcommand.CommandLevel
-import com.github.l1an.yuvarielevel.command.subcommand.CommandReload
-import com.github.l1an.yuvarielevel.command.subcommand.CommandVar
+import com.github.l1an.yuvarielevel.module.command.subcommand.CommandLevel
+import com.github.l1an.yuvarielevel.module.command.subcommand.CommandReload
+import com.github.l1an.yuvarielevel.module.command.subcommand.CommandVar
 import org.serverct.parrot.parrotx.feature.Debug.CommandDebug
 import taboolib.common.platform.command.CommandBody
 import taboolib.common.platform.command.CommandHeader

@@ -1,9 +1,9 @@
-package com.github.l1an.yuvarielevel.kether
+package com.github.l1an.yuvarielevel.module.kether
 
 import org.serverct.parrot.parrotx.module.level.LevelManager
 import org.serverct.parrot.parrotx.module.level.LevelManager.getLevel
-import org.serverct.parrot.parrotx.module.level.LevelManager.giveLevel
-import org.serverct.parrot.parrotx.module.level.LevelManager.setLevel
+import org.serverct.parrot.parrotx.module.level.LevelManager.giveExperience
+import org.serverct.parrot.parrotx.module.level.LevelManager.setExperience
 import taboolib.library.kether.ArgTypes
 import taboolib.module.kether.KetherParser
 import taboolib.module.kether.actionNow
@@ -11,14 +11,15 @@ import taboolib.module.kether.scriptParser
 import taboolib.module.kether.switch
 
 @Suppress("unused", "DuplicatedCode")
-object ActionLevel {
+object ActionExp {
 
     /**
-     * level get <id>          - 获取对应等级
-     * level give <id> <value> - 给予对应等级
-     * level set <id> <value>  - 设置对应等级
+     * exp get <id>      - 获取对应经验
+     * exp getMax <id>   - 获取对应最大经验
+     * exp give <id>     - 给予对应经验
+     * exp set <id>      - 设置对应经验
      */
-    @KetherParser(["level"], namespace = NAMESPACE, shared = true)
+    @KetherParser(["exp"], namespace = NAMESPACE, shared = true)
     fun parser() = scriptParser {
         it.switch {
             case("get") {
@@ -27,7 +28,19 @@ object ActionLevel {
                     val player = getBukkitPlayer()
                     val option = LevelManager.getLevelOption(id.toString())
                     if (option != null) {
-                        player.getLevel(option).level
+                        player.getLevel(option).experience
+                    } else {
+                        error("Unknown level id: $id")
+                    }
+                }
+            }
+            case("getMax") {
+                val id = it.next(ArgTypes.ACTION)
+                actionNow {
+                    val player = getBukkitPlayer()
+                    val option = LevelManager.getLevelOption(id.toString())
+                    if (option != null) {
+                        option.algorithm.getExp(player.getLevel(option).level).getNow(0)
                     } else {
                         error("Unknown level id: $id")
                     }
@@ -40,7 +53,7 @@ object ActionLevel {
                     val player = getBukkitPlayer()
                     val option = LevelManager.getLevelOption(id.toString())
                     if (option != null) {
-                        player.giveLevel(option, value)
+                        player.giveExperience(option, value)
                     } else {
                         error("Unknown level id: $id")
                     }
@@ -53,7 +66,7 @@ object ActionLevel {
                     val player = getBukkitPlayer()
                     val option = LevelManager.getLevelOption(id.toString())
                     if (option != null) {
-                        player.setLevel(option, value)
+                        player.setExperience(option, value)
                     } else {
                         error("Unknown level id: $id")
                     }

@@ -1,4 +1,4 @@
-package com.github.l1an.yuvarielevel.kether
+package com.github.l1an.yuvarielevel.module.kether
 
 import org.bukkit.entity.Player
 import taboolib.module.kether.ScriptFrame

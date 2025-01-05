@@ -1,6 +1,6 @@
-package com.github.l1an.yuvarielevel.compat.papi
+package com.github.l1an.yuvarielevel.module.compat.papi
 
-import com.github.l1an.yuvarielevel.kether.NAMESPACE
+import com.github.l1an.yuvarielevel.module.kether.NAMESPACE
 import org.bukkit.entity.Player
 import taboolib.common.platform.function.adaptPlayer
 import taboolib.module.kether.KetherShell

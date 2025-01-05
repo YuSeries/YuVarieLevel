@@ -6,6 +6,8 @@ debug: "{prefix} &a已切換debug模式 - {status}"
 level-load-success: "{prefix} &a已成功加载 &e{amount} &a个等级配置, 配置共 &e{total} &a个."
 level-level-change: "{prefix} &8[&e{option}&8] &f等级提升! &aLv.&e{level}&f(&e{exp}&f)"
 level-exp-change: "{prefix} &8[&e{option}&8] &f经验增加! &aLv.&e{level}&f(&e{exp}&f)"
+level-info-header: "{prefix} &e{player}&a的等级信息为:"
+level-info-body: "{prefix} - &e{option}: &a{level}&f/&a{max-level} &7({exp}&f/&7{max-exp})"
 
 var-set: "{prefix} &f{key} -> &e{value}"
 var-add: "{prefix} &f{key} = &e{value}"

@@ -1,4 +1,4 @@
-package com.github.l1an.yuvarielevel.handler
+package com.github.l1an.yuvarielevel.core.handler
 
 import org.bukkit.event.player.PlayerJoinEvent
 import org.bukkit.event.player.PlayerQuitEvent

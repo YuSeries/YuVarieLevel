@@ -1,4 +1,4 @@
-package com.github.l1an.yuvarielevel.command.subcommand
+package com.github.l1an.yuvarielevel.module.command.subcommand
 
 import org.bukkit.command.CommandSender
 import org.serverct.parrot.parrotx.lang.LanguageType

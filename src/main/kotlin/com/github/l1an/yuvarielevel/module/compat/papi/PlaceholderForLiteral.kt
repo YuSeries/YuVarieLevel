@@ -1,4 +1,4 @@
-package com.github.l1an.yuvarielevel.compat.papi
+package com.github.l1an.yuvarielevel.module.compat.papi
 
 import com.github.l1an.yuvarielevel.api.event.PlaceholderHookEvent
 import org.bukkit.entity.Player
