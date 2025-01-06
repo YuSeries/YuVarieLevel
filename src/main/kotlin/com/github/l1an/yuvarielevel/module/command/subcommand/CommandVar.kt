@@ -1,9 +1,9 @@
 package com.github.l1an.yuvarielevel.module.command.subcommand
 
+import com.github.l1an.artisan.lang.LanguageType
+import com.github.l1an.artisan.lang.sendLang
+import com.github.l1an.artisan.utils.toPlayer
 import org.bukkit.command.CommandSender
-import org.serverct.parrot.parrotx.lang.LanguageType
-import org.serverct.parrot.parrotx.lang.sendLang
-import org.serverct.parrot.parrotx.util.toPlayer
 import taboolib.common.platform.command.player
 import taboolib.common.platform.command.subCommand
 import taboolib.common.platform.command.suggest

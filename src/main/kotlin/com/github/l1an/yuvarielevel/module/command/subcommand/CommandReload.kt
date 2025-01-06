@@ -1,10 +1,10 @@
 package com.github.l1an.yuvarielevel.module.command.subcommand
 
+import com.github.l1an.artisan.feature.Reloadables
+import com.github.l1an.artisan.lang.LanguageType
+import com.github.l1an.artisan.lang.sendLang
 import org.bukkit.command.CommandSender
-import org.serverct.parrot.parrotx.lang.LanguageType
-import org.serverct.parrot.parrotx.lang.sendLang
-import org.serverct.parrot.parrotx.mechanism.Reloadables
-import org.serverct.parrot.parrotx.module.level.LevelManager
+import com.github.l1an.yuvarielevel.core.level.LevelManager
 import taboolib.common.platform.command.subCommandExec
 
 val CommandReload = subCommandExec<CommandSender> {

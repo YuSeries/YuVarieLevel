@@ -3,18 +3,14 @@ import io.izzel.taboolib.gradle.*
 
 plugins {
     java
-    id("io.izzel.taboolib") version "2.0.11"
-    id("org.jetbrains.kotlin.jvm") version "1.8.22"
+    id("io.izzel.taboolib") version "2.0.22"
+    id("org.jetbrains.kotlin.jvm") version "1.9.22"
 }
 
 taboolib {
     env {
-        install(BUKKIT_ALL)
-        install(UNIVERSAL)
-        install(DATABASE, EXPANSION_PLAYER_DATABASE)
-        install(NMS_UTIL)
-        install(KETHER)
-        install(METRICS)
+        install(Basic, Bukkit, BukkitUtil, BukkitHook, MinecraftChat, I18n, CommandHelper,
+            Database, DatabasePlayer, BukkitNMSUtil, Kether, Metrics)
     }
     description {
         name = "YuVarieLevel"
@@ -23,12 +19,14 @@ taboolib {
             name("L1An")
         }
     }
-    version { taboolib = "6.1.1" }
+    version { taboolib = "6.2.0" }
+    relocate("com.github.l1an.artisan", "${project.group}.artisan")
     relocate("org.serverct.parrot.parrotx", "${project.group}.parrotx")
 }
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
 
 dependencies {
@@ -36,7 +34,7 @@ dependencies {
     compileOnly("ink.ptms.core:v12004:12004:universal")
     compileOnly(kotlin("stdlib"))
     compileOnly(fileTree("libs"))
-    taboo(files("libs/module-parrotx-1.5.7-7-special.jar"))
+    taboo("com.github.l1an.artisan:Artisan:1.0.3")
 }
 
 tasks.withType<JavaCompile> {

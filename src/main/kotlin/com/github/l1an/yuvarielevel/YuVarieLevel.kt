@@ -1,9 +1,10 @@
 package com.github.l1an.yuvarielevel
 
+import com.github.l1an.artisan.feature.sendInfo
+import com.github.l1an.artisan.feature.setInfoPrefix
+import com.github.l1an.artisan.feature.update.GithubUpdateChecker
+import com.github.l1an.artisan.utils.sendEnableInfo
 import com.github.l1an.yuvarielevel.module.manager.ConfigManager.config
-import org.serverct.parrot.parrotx.function.sendInfo
-import org.serverct.parrot.parrotx.function.setInfoPrefix
-import org.serverct.parrot.parrotx.update.GithubUpdateChecker
 import taboolib.common.io.newFile
 import taboolib.common.platform.Platform
 import taboolib.common.platform.Plugin
@@ -19,10 +20,7 @@ object YuVarieLevel : Plugin() {
         Metrics(23001, pluginVersion, Platform.BUKKIT)
 
         setInfoPrefix(messagePrefix)
-        sendInfo {
-            +"&a$pluginId has been loaded! - $pluginVersion"
-            +"&bAuthor by L1An(Discord: &el1_an.&b)"
-        }
+        sendEnableInfo()
 
         try {
             if (config.getString("Database.Method")?.uppercase() == "MYSQL") {

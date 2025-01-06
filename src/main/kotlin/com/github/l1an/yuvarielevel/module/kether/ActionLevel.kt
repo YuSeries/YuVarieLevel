@@ -1,9 +1,9 @@
 package com.github.l1an.yuvarielevel.module.kether
 
-import org.serverct.parrot.parrotx.module.level.LevelManager
-import org.serverct.parrot.parrotx.module.level.LevelManager.getLevel
-import org.serverct.parrot.parrotx.module.level.LevelManager.giveLevel
-import org.serverct.parrot.parrotx.module.level.LevelManager.setLevel
+import com.github.l1an.yuvarielevel.core.level.LevelManager
+import com.github.l1an.yuvarielevel.core.level.LevelManager.getLevel
+import com.github.l1an.yuvarielevel.core.level.LevelManager.giveLevel
+import com.github.l1an.yuvarielevel.core.level.LevelManager.setLevel
 import taboolib.library.kether.ArgTypes
 import taboolib.module.kether.KetherParser
 import taboolib.module.kether.actionNow

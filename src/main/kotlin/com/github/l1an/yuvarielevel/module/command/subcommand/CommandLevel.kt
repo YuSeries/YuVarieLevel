@@ -1,16 +1,16 @@
 package com.github.l1an.yuvarielevel.module.command.subcommand
 
+import com.github.l1an.artisan.lang.LanguageType
+import com.github.l1an.artisan.lang.sendLang
+import com.github.l1an.artisan.utils.toPlayer
 import org.bukkit.command.CommandSender
-import org.serverct.parrot.parrotx.lang.LanguageType
-import org.serverct.parrot.parrotx.lang.sendLang
-import org.serverct.parrot.parrotx.module.level.LevelManager
-import org.serverct.parrot.parrotx.module.level.LevelManager.getLevel
-import org.serverct.parrot.parrotx.module.level.LevelManager.getLevelOption
-import org.serverct.parrot.parrotx.module.level.LevelManager.giveExperience
-import org.serverct.parrot.parrotx.module.level.LevelManager.giveLevel
-import org.serverct.parrot.parrotx.module.level.LevelManager.setExperience
-import org.serverct.parrot.parrotx.module.level.LevelManager.setLevel
-import org.serverct.parrot.parrotx.util.toPlayer
+import com.github.l1an.yuvarielevel.core.level.LevelManager
+import com.github.l1an.yuvarielevel.core.level.LevelManager.getLevel
+import com.github.l1an.yuvarielevel.core.level.LevelManager.getLevelOption
+import com.github.l1an.yuvarielevel.core.level.LevelManager.giveExperience
+import com.github.l1an.yuvarielevel.core.level.LevelManager.giveLevel
+import com.github.l1an.yuvarielevel.core.level.LevelManager.setExperience
+import com.github.l1an.yuvarielevel.core.level.LevelManager.setLevel
 import taboolib.common.platform.command.player
 import taboolib.common.platform.command.subCommand
 import taboolib.common.platform.command.suggest

@@ -1,9 +1,9 @@
 package com.github.l1an.yuvarielevel.module.compat.papi.impl
 
 import com.github.l1an.yuvarielevel.api.event.PlaceholderHookEvent
-import org.serverct.parrot.parrotx.module.level.LevelManager.getLevel
-import org.serverct.parrot.parrotx.module.level.LevelManager.getLevelOption
-import org.serverct.parrot.parrotx.util.get
+import com.github.l1an.yuvarielevel.core.level.LevelManager.getLevel
+import com.github.l1an.yuvarielevel.core.level.LevelManager.getLevelOption
+import com.github.l1an.artisan.utils.get
 import taboolib.common.platform.event.SubscribeEvent
 import taboolib.expansion.getDataContainer
 
